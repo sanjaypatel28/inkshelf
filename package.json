@@ -1,0 +1,14 @@
+{
+  "name": "inkshelf",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A reading and publishing platform for comics and web novels.",
+  "type": "commonjs",
+  "engines": { "node": ">=22.5.0" },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seed.js",
+    "reseed": "node seed.js --force",
+    "reset": "rm -rf data && node seed.js"
+  }
+}

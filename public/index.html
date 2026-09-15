@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Inkshelf</title>
+<meta name="description" content="Read and publish original comics and web novels.">
+<meta name="theme-color" content="#12102A">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,300;10..48,400;10..48,500;10..48,600;10..48,800&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2312102A'/%3E%3Crect x='5' y='6' width='9' height='20' fill='%232ED3E0'/%3E%3Crect x='17' y='6' width='9' height='13' fill='%23FF3D8A'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-inner">
+    <a href="/" class="brand" data-link aria-label="Inkshelf home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span class="brand-word">Inkshelf</span>
+    </a>
+
+    <nav class="topnav" aria-label="Sections">
+      <a href="/browse" data-link data-nav="browse">Browse</a>
+      <a href="/shelf" data-link data-nav="shelf">My shelf</a>
+      <a href="/publish" data-link data-nav="publish">Publish</a>
+    </nav>
+
+    <div class="search" id="search">
+      <label class="search-field">
+        <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5 18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input id="q" type="search" placeholder="Search titles, authors, genres" autocomplete="off"
+               role="combobox" aria-expanded="false" aria-controls="suggest" aria-label="Search the catalogue">
+        <kbd class="search-key" aria-hidden="true">/</kbd>
+      </label>
+      <div class="suggest" id="suggest" role="listbox" aria-label="Search suggestions" hidden></div>
+    </div>
+
+    <div class="account" id="account"></div>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main" tabindex="-1"></main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Inkshelf hosts work its creators own or have permission to publish.</p>
+    <p class="footer-meta">A reference implementation. Content in this demo was generated for it.</p>
+  </div>
+</footer>
+
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<script type="module" src="/js/app.js"></script>
+</body>
+</html>
